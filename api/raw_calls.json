@@ -1,0 +1,236 @@
+{
+    "auth": "basic_auth",
+    "calls": {
+        "AAN": {
+            "doc_link": "https://sheet2api.com/documentation/",
+            "initialized": false,
+            "method": "get",
+            "name": "read all records from the first sheet",
+            "publish_as": "data",
+            "rank": 0,
+            "should_reinitialize": true,
+            "url": "[sheet2api_api_url]",
+            "url_params": {
+                "AAO": {
+                    "key": "sheet2api_api_url",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AAP": {
+            "doc_link": "https://sheet2api.com/documentation/",
+            "method": "get",
+            "name": "read all records from a specific sheet",
+            "publish_as": "data",
+            "rank": 1,
+            "should_reinitialize": true,
+            "url": "[sheet2api_api_url]/[sheet_name]",
+            "url_params": {
+                "AAQ": {
+                    "key": "sheet2api_api_url",
+                    "private": true,
+                    "value": ""
+                },
+                "AAR": {
+                    "doc": "The name of the Sheet within the Spreadsheet you would like to target.",
+                    "key": "sheet_name",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AAS": {
+            "doc_link": "https://sheet2api.com/documentation/",
+            "method": "get",
+            "name": "search records from a specific sheet",
+            "publish_as": "data",
+            "rank": 2,
+            "should_reinitialize": true,
+            "url": "[sheet2api_api_url]/[sheet_name]?[column_name]=[search_value]",
+            "url_params": {
+                "AAT": {
+                    "key": "sheet2api_api_url",
+                    "private": true,
+                    "value": ""
+                },
+                "AAU": {
+                    "key": "sheet_name",
+                    "private": true,
+                    "value": ""
+                },
+                "AAV": {
+                    "key": "column_name",
+                    "private": true,
+                    "value": ""
+                },
+                "AAW": {
+                    "key": "search_value",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AAX": {
+            "body": "{\n\t\"<column1_name>\": \"<column1_value>\",\n\t\"<column2_name>\": \"<column2_value>\",\n\t\"<column3_name>\": \"<column3_value>\"\n}",
+            "body_params": {
+                "AAd": {
+                    "key": "column1_name",
+                    "private": true,
+                    "value": ""
+                },
+                "AAe": {
+                    "key": "column1_value",
+                    "private": true,
+                    "value": ""
+                },
+                "AAi": {
+                    "key": "column2_value",
+                    "private": true,
+                    "value": ""
+                },
+                "AAk": {
+                    "key": "column2_name",
+                    "private": true,
+                    "value": ""
+                },
+                "AAn": {
+                    "key": "column3_name",
+                    "private": true,
+                    "value": ""
+                },
+                "AAp": {
+                    "key": "column3_value",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "doc_link": "https://sheet2api.com/documentation/",
+            "headers": {
+                "AAq": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json"
+                }
+            },
+            "method": "post",
+            "name": "add new record to a specific sheet",
+            "publish_as": "action",
+            "rank": 3,
+            "should_reinitialize": true,
+            "url": "[sheet2api_api_url]/[sheet_name]",
+            "url_params": {
+                "AAY": {
+                    "key": "sheet2api_api_url",
+                    "private": true,
+                    "value": ""
+                },
+                "AAZ": {
+                    "key": "sheet_name",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AAr": {
+            "body": "{\n\t\"<target_column_name>\": \"<new_value>\",\n\t\"<target_column_name2>\": \"<new_value2>\"\n}",
+            "body_params": {
+                "ABX": {
+                    "key": "target_column_name",
+                    "private": true,
+                    "value": ""
+                },
+                "ABg": {
+                    "key": "new_value",
+                    "private": true,
+                    "value": ""
+                },
+                "ABh": {
+                    "key": "target_column_name2",
+                    "private": true,
+                    "value": ""
+                },
+                "ABi": {
+                    "key": "new_value2",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "doc_link": "https://sheet2api.com/documentation/",
+            "headers": {
+                "AAw": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json"
+                }
+            },
+            "method": "patch",
+            "name": "update records within a specific sheet",
+            "publish_as": "action",
+            "rank": 4,
+            "should_reinitialize": true,
+            "url": "[sheet2api_api_url]/[sheet_name]?[column_name]=[search_value]",
+            "url_params": {
+                "AAs": {
+                    "key": "sheet2api_api_url",
+                    "private": true,
+                    "value": ""
+                },
+                "AAt": {
+                    "key": "sheet_name",
+                    "private": true,
+                    "value": ""
+                },
+                "AAu": {
+                    "key": "column_name",
+                    "private": true,
+                    "value": ""
+                },
+                "AAv": {
+                    "key": "search_value",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "ABj": {
+            "doc_link": "https://sheet2api.com/documentation/",
+            "method": "delete_method",
+            "name": "delete records within a specific sheet",
+            "publish_as": "action",
+            "rank": 5,
+            "should_reinitialize": true,
+            "url": "[sheet2api_api_url]/[sheet_name]?[column_name]=[search_value]",
+            "url_params": {
+                "ABk": {
+                    "key": "sheet2api_api_url",
+                    "private": true,
+                    "value": ""
+                },
+                "ABl": {
+                    "key": "sheet_name",
+                    "private": true,
+                    "value": ""
+                },
+                "ABm": {
+                    "key": "column_name",
+                    "private": true,
+                    "value": ""
+                },
+                "ABn": {
+                    "key": "search_value",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        }
+    },
+    "human": "sheet2api",
+    "shared_params": {
+        "AAM": {
+            "key": "sheet2api_api_url",
+            "private": true,
+            "visibility": "secret"
+        }
+    }
+}

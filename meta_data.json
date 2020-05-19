@@ -1,0 +1,13 @@
+{
+    "categories": {
+        "0": "data (things)",
+        "1": "productivity",
+        "2": "technical"
+    },
+    "description": "This plugin enables your Bubble app to connect to and read & write data to any Google Sheets or Excel Online Spreadsheet.\n\nFor support https://sheet2api.com/contact/",
+    "image": "//s3.amazonaws.com/appforest_uf/f1589914812648x124853122040522900/favicon.png",
+    "license": "open_source",
+    "link": "https://sheet2api.com/",
+    "name": "sheet2api",
+    "plugin_instructions": "The first spreadsheet row (1) must only contain column names.\nAll the other rows may contain data, in whatever format you'd like (symbols, numbers, dates, words, etc).\n\n1. Sign up at sheet2api with your Google/Microsoft account here: https://sheet2api.com/\n2. Once logged in click \"Create Spreadsheet API\".\n3. On Google Sheets/Excel Online, copy the Public Share Link to your spreadsheet.\n4. Paste that into the form on the \"Create Speadsheet APi\" and submit the form.\n5. The next page should show your newly created \"API URL\". Use that for all \"sheet2api_api_url\" parameters in the plug-in.\n"
+}

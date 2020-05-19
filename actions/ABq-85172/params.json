@@ -1,0 +1,32 @@
+{
+    "category": "data (things)",
+    "display": "add new record to a specific sheet",
+    "fields": {
+        "ABr": {
+            "caption": "sheet2api_api_url",
+            "editor": "StaticText",
+            "name": "sheet2api_api_url",
+            "rank": 0
+        },
+        "ABs": {
+            "caption": "column_name",
+            "editor": "StaticText",
+            "name": "column_name",
+            "rank": 1
+        },
+        "ABt": {
+            "caption": "column_value",
+            "editor": "DynamicValue",
+            "name": "column_value",
+            "rank": 2,
+            "value": "_any_thing"
+        },
+        "ABv": {
+            "caption": "sheet_name",
+            "editor": "StaticText",
+            "name": "sheet_name",
+            "rank": 3
+        }
+    },
+    "type": "client_side"
+}
